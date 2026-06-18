@@ -63,6 +63,35 @@
   --radius: 0.25rem;
 }
 
+/* ── Light mode overrides ── */
+.light {
+  --background: oklch(0.97 0.006 50);          /* warm white parchment */
+  --foreground: oklch(0.18 0.010 20);           /* deep charcoal */
+
+  --card: oklch(0.93 0.010 40);
+  --card-foreground: oklch(0.18 0.010 20);
+
+  --primary: oklch(0.55 0.10 15);              /* deeper rose for contrast on light */
+  --primary-foreground: oklch(0.97 0.006 50);
+
+  --secondary: oklch(0.90 0.010 40);
+  --secondary-foreground: oklch(0.18 0.010 20);
+
+  --muted: oklch(0.88 0.010 40);
+  --muted-foreground: oklch(0.42 0.015 25);
+
+  --accent: oklch(0.78 0.060 12);              /* muted blush */
+  --accent-foreground: oklch(0.18 0.010 20);
+
+  --border: oklch(0.82 0.018 30);
+  --input: oklch(0.90 0.010 40);
+  --ring: oklch(0.55 0.10 15);
+
+  --blush: oklch(0.60 0.085 15);
+  --mauve: oklch(0.55 0.065 10);
+  --cream: oklch(0.18 0.010 20);               /* inverted — used for text on light */
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

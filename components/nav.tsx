@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "next-themes";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -13,6 +14,12 @@ const NAV_LINKS = [
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -32,7 +39,7 @@ export default function Nav() {
         {/* Logo */}
         <a
           href="#"
-          className="font-serif text-cream text-xl md:text-2xl tracking-widest uppercase"
+          className="font-serif text-foreground text-xl md:text-2xl tracking-widest uppercase"
           style={{ letterSpacing: "0.18em" }}
         >
           Mission Esthetics
@@ -44,11 +51,20 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
-              className="font-sans text-xs tracking-[0.2em] uppercase text-muted-foreground hover:text-cream transition-colors duration-200"
+              className="font-sans text-xs tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
               {link.label}
             </a>
           ))}
+          {mounted && (
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
+          )}
           <a
             href="https://missionesthetics.glossgenius.com/services"
             target="_blank"
@@ -59,14 +75,25 @@ export default function Nav() {
           </a>
         </nav>
 
-        {/* Mobile hamburger */}
-        <button
-          className="md:hidden text-cream"
-          onClick={() => setOpen(!open)}
-          aria-label={open ? "Close menu" : "Open menu"}
-        >
-          {open ? <X size={22} /> : <Menu size={22} />}
-        </button>
+        {/* Mobile controls */}
+        <div className="md:hidden flex items-center gap-4">
+          {mounted && (
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
+          )}
+          <button
+            onClick={() => setOpen(!open)}
+            aria-label={open ? "Close menu" : "Open menu"}
+            className="text-foreground"
+          >
+            {open ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile drawer */}
@@ -77,7 +104,7 @@ export default function Nav() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="font-sans text-sm tracking-[0.2em] uppercase text-muted-foreground hover:text-cream transition-colors"
+              className="font-sans text-sm tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
               {link.label}
             </a>
