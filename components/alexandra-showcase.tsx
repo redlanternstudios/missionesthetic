@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const SPECIALTIES = [
   "Brazilian Waxing",
   "Bikini Waxing",
@@ -23,42 +21,9 @@ export default function AlexandraShowcase() {
         aria-hidden="true"
       />
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-        {/* Image panel */}
-        <div className="relative">
-          <div
-            className="relative overflow-hidden"
-            style={{ aspectRatio: "4/5" }}
-          >
-            <Image
-              src="/images/alexandra-portrait.png"
-              alt="Alexandra Brown — Waxing Specialist at Mission Esthetics"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              priority
-            />
-            {/* Soft mauve vignette overlay */}
-            <div
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background:
-                  "linear-gradient(to top, oklch(0.10 0.005 20 / 0.5) 0%, transparent 60%)",
-              }}
-              aria-hidden="true"
-            />
-          </div>
-
-          {/* Decorative border accent */}
-          <div
-            className="absolute -bottom-4 -right-4 w-2/3 h-2/3 border pointer-events-none hidden md:block"
-            style={{ borderColor: "var(--mauve)", opacity: 0.35 }}
-            aria-hidden="true"
-          />
-        </div>
-
+      <div className="max-w-3xl mx-auto">
         {/* Text panel */}
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center text-center">
           {/* Eyebrow */}
           <p
             className="font-sans text-xs tracking-[0.3em] uppercase mb-6"
@@ -127,7 +92,7 @@ export default function AlexandraShowcase() {
             href="https://missionesthetics.glossgenius.com/services"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-sans text-xs tracking-[0.2em] uppercase px-10 py-4 bg-primary text-primary-foreground hover:bg-blush transition-colors duration-300 self-start text-center"
+            className="font-sans text-xs tracking-[0.2em] uppercase px-10 py-4 bg-primary text-primary-foreground hover:bg-blush transition-colors duration-300 text-center"
           >
             Book a Session
           </a>

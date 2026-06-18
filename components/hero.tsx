@@ -37,34 +37,27 @@ function FlowerVideo({ className = "", style }: FlowerVideoProps) {
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-background"
       aria-label="Mission Esthetics hero"
     >
-      {/* ── Single flower video centred behind the heading ── */}
-      {/*
-        Positioned at the vertical mid-point of the hero so the bloom sits
-        directly under the "Mission Esthetics" wordmark. A tight radial mask
-        dissolves the edges to nothing, leaving only the centre petal cluster
-        barely visible. Opacity is intentionally low so the dark background
-        reads through cleanly and the text stays fully legible.
-      */}
+      {/* ── Flower video — centred behind heading, barely visible ── */}
       <div
-        className="absolute"
-        style={{
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -48%)",
-          width: "min(95vw, 780px)",
-          opacity: 0.22,
-          maskImage:
-            "radial-gradient(ellipse 60% 60% at 50% 50%, black 30%, transparent 100%)",
-          WebkitMaskImage:
-            "radial-gradient(ellipse 60% 60% at 50% 50%, black 30%, transparent 100%)",
-          zIndex: 1,
-        }}
+        className="absolute inset-0 flex items-center justify-center"
+        style={{ zIndex: 1 }}
         aria-hidden="true"
       >
-        <FlowerVideo className="w-full h-auto" />
+        <div
+          style={{
+            width: "min(140vw, 1100px)",
+            opacity: 0.18,
+            maskImage:
+              "radial-gradient(ellipse 55% 55% at 50% 50%, black 20%, transparent 75%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse 55% 55% at 50% 50%, black 20%, transparent 75%)",
+          }}
+        >
+          <FlowerVideo className="w-full h-auto" />
+        </div>
       </div>
 
       {/* ── Hero content ── */}
