@@ -54,12 +54,13 @@ export default function Hero() {
           top: "50%",
           left: "50%",
           transform: "translate(-50%, -48%)",
-          width: "min(90vw, 700px)",
-          opacity: 0.13,
+          width: "min(95vw, 780px)",
+          opacity: 0.22,
           maskImage:
-            "radial-gradient(ellipse 55% 55% at 50% 50%, black 0%, transparent 100%)",
+            "radial-gradient(ellipse 60% 60% at 50% 50%, black 30%, transparent 100%)",
           WebkitMaskImage:
-            "radial-gradient(ellipse 55% 55% at 50% 50%, black 0%, transparent 100%)",
+            "radial-gradient(ellipse 60% 60% at 50% 50%, black 30%, transparent 100%)",
+          zIndex: 1,
         }}
         aria-hidden="true"
       >
@@ -67,7 +68,7 @@ export default function Hero() {
       </div>
 
       {/* ── Hero content ── */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6 md:px-10 max-w-4xl mx-auto">
+      <div className="relative flex flex-col items-center text-center px-6 md:px-10 max-w-4xl mx-auto" style={{ zIndex: 10 }}>
         {/* Eyebrow */}
         <p
           className="font-sans text-xs tracking-[0.35em] uppercase mb-6"
