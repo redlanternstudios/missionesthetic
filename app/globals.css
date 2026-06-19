@@ -1,0 +1,111 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-blush: var(--blush);
+  --color-mauve: var(--mauve);
+  --color-cream: var(--cream);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+:root {
+  /* Mission Esthetics dark luxury palette */
+  --background: oklch(0.10 0.005 20);          /* deep warm charcoal black */
+  --foreground: oklch(0.94 0.008 50);           /* warm ivory/cream */
+
+  --card: oklch(0.13 0.006 20);
+  --card-foreground: oklch(0.94 0.008 50);
+
+  --primary: oklch(0.72 0.08 15);               /* blush rose */
+  --primary-foreground: oklch(0.10 0.005 20);
+
+  --secondary: oklch(0.18 0.008 20);            /* dark surface */
+  --secondary-foreground: oklch(0.94 0.008 50);
+
+  --muted: oklch(0.16 0.006 20);
+  --muted-foreground: oklch(0.60 0.015 30);     /* warm grey */
+
+  --accent: oklch(0.42 0.065 10);               /* dark mauve */
+  --accent-foreground: oklch(0.94 0.008 50);
+
+  --border: oklch(0.22 0.010 20);
+  --input: oklch(0.18 0.008 20);
+  --ring: oklch(0.72 0.08 15);
+
+  /* Brand tokens */
+  --blush: oklch(0.82 0.065 15);               /* soft blush pink */
+  --mauve: oklch(0.38 0.055 8);                /* deep mauve/burgundy */
+  --cream: oklch(0.94 0.008 50);               /* warm cream/ivory */
+
+  --radius: 0.25rem;
+}
+
+/* ── Light mode overrides ── */
+.light {
+  --background: oklch(0.97 0.006 50);          /* warm white parchment */
+  --foreground: oklch(0.18 0.010 20);           /* deep charcoal */
+
+  --card: oklch(0.93 0.010 40);
+  --card-foreground: oklch(0.18 0.010 20);
+
+  --primary: oklch(0.55 0.10 15);              /* deeper rose for contrast on light */
+  --primary-foreground: oklch(0.97 0.006 50);
+
+  --secondary: oklch(0.90 0.010 40);
+  --secondary-foreground: oklch(0.18 0.010 20);
+
+  --muted: oklch(0.88 0.010 40);
+  --muted-foreground: oklch(0.42 0.015 25);
+
+  --accent: oklch(0.78 0.060 12);              /* muted blush */
+  --accent-foreground: oklch(0.18 0.010 20);
+
+  --border: oklch(0.82 0.018 30);
+  --input: oklch(0.90 0.010 40);
+  --ring: oklch(0.55 0.10 15);
+
+  --blush: oklch(0.60 0.085 15);
+  --mauve: oklch(0.55 0.065 10);
+  --cream: oklch(0.18 0.010 20);               /* inverted — used for text on light */
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    box-sizing: border-box;
+  }
+  html {
+    @apply bg-background font-sans;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  /* Ensure the accordion chevron inherits blush on open */
+  [data-state="open"] > .accordion-trigger-icon {
+    color: var(--blush);
+  }
+}
