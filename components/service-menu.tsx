@@ -161,7 +161,7 @@ export default function ServiceMenu() {
         </div>
 
         {/* Accordion menu */}
-        <Accordion type="multiple" className="space-y-0">
+        <Accordion className="space-y-0">
           {MENU.map((cat) => (
             <AccordionItem
               key={cat.category}
