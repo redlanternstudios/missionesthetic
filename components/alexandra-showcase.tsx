@@ -37,7 +37,7 @@ export default function AlexandraShowcase() {
             className="font-serif text-cream text-balance leading-tight mb-6"
             style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)", fontWeight: 300 }}
           >
-            Alexandra Brown
+            Alexandra
           </h2>
 
           <p
@@ -52,17 +52,51 @@ export default function AlexandraShowcase() {
             style={{ height: "1px", background: "var(--blush)", opacity: 0.5 }}
           />
 
-          <p
-            className="font-sans text-muted-foreground leading-relaxed mb-10"
-            style={{ fontSize: "0.9375rem" }}
-          >
-            Alexandra Brown offers private, detail-focused waxing services in a
-            clean and comfortable setting. Her work is centered around smooth
-            results, client comfort, and a calm one-on-one experience. Whether
-            it is brows, face, underarms, bikini, Brazilian, or full-body
-            waxing, Alexandra&apos;s approach is thoughtful, professional, and
-            confidence-driven.
-          </p>
+          <div className="mb-12 space-y-7 max-w-xl">
+            <p
+              className="font-sans text-muted-foreground"
+              style={{ fontSize: "1rem", lineHeight: 1.85 }}
+            >
+              If you know Alexandra, you already know the feeling.
+            </p>
+            <p
+              className="font-sans text-muted-foreground"
+              style={{ fontSize: "1rem", lineHeight: 1.85 }}
+            >
+              You walk in a little nervous, and you leave glowing. Lighter,
+              brighter, laughing.
+            </p>
+            <p
+              className="font-sans text-muted-foreground"
+              style={{ fontSize: "1rem", lineHeight: 1.85 }}
+            >
+              She has a gift for making even the most personal appointments feel
+              easy. Like catching up with the friend who somehow always makes you
+              feel like the best version of yourself.
+            </p>
+            <p
+              className="font-sans text-muted-foreground"
+              style={{ fontSize: "1rem", lineHeight: 1.85 }}
+            >
+              Behind the warmth is a true perfectionist. Every wax is precise,
+              gentle, and done with care. Brows, face, underarms, bikini,
+              Brazilian, or full body.
+            </p>
+            <p
+              className="font-sans text-muted-foreground"
+              style={{ fontSize: "1rem", lineHeight: 1.85 }}
+            >
+              Her private studio is your space to exhale. Calm, judgment-free, and
+              entirely about you.
+            </p>
+            <p
+              className="font-serif italic text-cream"
+              style={{ fontSize: "1.15rem", lineHeight: 1.6 }}
+            >
+              Come for the smooth results. Stay for the energy that keeps her
+              clients coming back for years.
+            </p>
+          </div>
 
           {/* Specialties */}
           <div className="mb-10">

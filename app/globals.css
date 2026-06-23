@@ -36,22 +36,22 @@
   --background: oklch(0.10 0.005 20);          /* deep warm charcoal black */
   --foreground: oklch(0.94 0.008 50);           /* warm ivory/cream */
 
-  --card: oklch(0.13 0.006 20);
+  --card: oklch(0.145 0.006 20);                /* elevated surface — lifts off the page */
   --card-foreground: oklch(0.94 0.008 50);
 
   --primary: oklch(0.72 0.08 15);               /* blush rose */
   --primary-foreground: oklch(0.10 0.005 20);
 
-  --secondary: oklch(0.18 0.008 20);            /* dark surface */
+  --secondary: oklch(0.19 0.008 20);            /* dark surface */
   --secondary-foreground: oklch(0.94 0.008 50);
 
   --muted: oklch(0.16 0.006 20);
-  --muted-foreground: oklch(0.60 0.015 30);     /* warm grey */
+  --muted-foreground: oklch(0.82 0.012 45);     /* warm light grey — clearly legible on charcoal */
 
   --accent: oklch(0.42 0.065 10);               /* dark mauve */
   --accent-foreground: oklch(0.94 0.008 50);
 
-  --border: oklch(0.22 0.010 20);
+  --border: oklch(0.28 0.010 22);               /* visible warm divider */
   --input: oklch(0.18 0.008 20);
   --ring: oklch(0.72 0.08 15);
 

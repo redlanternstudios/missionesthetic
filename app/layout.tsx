@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Mission Esthetics — Private Waxing in Mission Valley",
   description:
-    "Private, detail-focused waxing services by Alexandra Brown in Mission Valley. Smooth results, client comfort, and a calm one-on-one experience.",
+    "Private, detail-focused waxing services by Alexandra in Mission Valley. Smooth results, client comfort, and a calm one-on-one experience.",
   keywords: [
     "waxing",
     "Mission Valley",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "body waxing",
     "brow waxing",
     "Mission Esthetics",
-    "Alexandra Brown",
+    "Alexandra",
   ],
   openGraph: {
     title: "Mission Esthetics",
@@ -51,6 +51,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${cormorant.variable} ${inter.variable} bg-background`}
     >
       <body className="min-h-full antialiased">
