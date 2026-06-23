@@ -63,7 +63,7 @@ export default function AlexandraShowcase() {
               className="font-sans text-muted-foreground"
               style={{ fontSize: "1rem", lineHeight: 1.85 }}
             >
-              You walk in a little nervous, and you leave glowing &mdash; lighter,
+              You walk in a little nervous, and you leave glowing. Lighter,
               brighter, laughing.
             </p>
             <p
@@ -79,7 +79,7 @@ export default function AlexandraShowcase() {
               style={{ fontSize: "1rem", lineHeight: 1.85 }}
             >
               Behind the warmth is a true perfectionist. Every wax is precise,
-              gentle, and done with care &mdash; brows, face, underarms, bikini,
+              gentle, and done with care. Brows, face, underarms, bikini,
               Brazilian, or full body.
             </p>
             <p
