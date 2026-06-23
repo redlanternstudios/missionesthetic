@@ -46,7 +46,7 @@
   --secondary-foreground: oklch(0.94 0.008 50);
 
   --muted: oklch(0.16 0.006 20);
-  --muted-foreground: oklch(0.60 0.015 30);     /* warm grey */
+  --muted-foreground: oklch(0.78 0.012 40);     /* warm light grey — legible on charcoal */
 
   --accent: oklch(0.42 0.065 10);               /* dark mauve */
   --accent-foreground: oklch(0.94 0.008 50);

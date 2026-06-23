@@ -37,7 +37,7 @@ export default function AlexandraShowcase() {
             className="font-serif text-cream text-balance leading-tight mb-6"
             style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)", fontWeight: 300 }}
           >
-            Alexandra Brown
+            Alexandra
           </h2>
 
           <p
@@ -56,7 +56,7 @@ export default function AlexandraShowcase() {
             className="font-sans text-muted-foreground leading-relaxed mb-10"
             style={{ fontSize: "0.9375rem" }}
           >
-            Alexandra Brown offers private, detail-focused waxing services in a
+            Alexandra offers private, detail-focused waxing services in a
             clean and comfortable setting. Her work is centered around smooth
             results, client comfort, and a calm one-on-one experience. Whether
             it is brows, face, underarms, bikini, Brazilian, or full-body

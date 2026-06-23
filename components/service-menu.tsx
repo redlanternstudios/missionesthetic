@@ -185,9 +185,9 @@ export default function ServiceMenu() {
                         i !== cat.items.length - 1 ? "border-b border-border/50" : ""
                       }`}
                     >
-                      <div className="flex items-start justify-between gap-4">
+                      <div className="flex items-start justify-between gap-3 sm:gap-6">
                         {/* Name + badges + note */}
-                        <div className="flex-grow">
+                        <div className="flex-grow min-w-0">
                           <div className="flex flex-wrap items-center gap-2 mb-1">
                             <span className="font-sans text-sm text-cream">
                               {item.name}
@@ -218,14 +218,14 @@ export default function ServiceMenu() {
                         </div>
 
                         {/* Price + time */}
-                        <div className="flex items-center gap-5 flex-shrink-0 text-right">
+                        <div className="flex items-center gap-3 sm:gap-5 flex-shrink-0 text-right">
                           <span
                             className="font-serif text-base"
                             style={{ color: "var(--blush)" }}
                           >
                             {item.price}
                           </span>
-                          <span className="font-sans text-xs text-muted-foreground w-14 text-right">
+                          <span className="font-sans text-xs text-muted-foreground w-12 sm:w-14 text-right">
                             {item.time}
                           </span>
                         </div>

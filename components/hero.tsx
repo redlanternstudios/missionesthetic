@@ -67,7 +67,7 @@ export default function Hero() {
           className="font-sans text-xs tracking-[0.35em] uppercase mb-6"
           style={{ color: "var(--blush)" }}
         >
-          Mission Valley &middot; Private Studio
+          Private Studio
         </p>
 
         {/* Brand name */}
