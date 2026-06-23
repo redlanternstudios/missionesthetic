@@ -47,7 +47,7 @@ export default function ServicesPreview() {
   return (
     <section
       id="services"
-      className="py-28 md:py-36 px-6 md:px-10"
+      className="py-24 md:py-36 px-6 md:px-10 bg-card border-y border-border"
       aria-labelledby="services-heading"
     >
       <div className="max-w-7xl mx-auto">
@@ -72,36 +72,41 @@ export default function ServicesPreview() {
           />
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
-          {FEATURED.map((svc) => (
+        {/* Grid — recessed tiles separated by visible rules */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
+          {FEATURED.map((svc, idx) => (
             <article
               key={svc.name}
-              className="bg-background p-8 md:p-10 flex flex-col group hover:bg-card transition-colors duration-300"
+              className="bg-background p-8 md:p-10 flex flex-col group hover:bg-secondary transition-colors duration-300"
             >
               {/* Number accent */}
-              <div
-                className="font-serif text-5xl leading-none mb-6 opacity-15 group-hover:opacity-25 transition-opacity"
-                style={{ color: "var(--blush)" }}
-                aria-hidden="true"
-              >
-                {String(FEATURED.indexOf(svc) + 1).padStart(2, "0")}
+              <div className="flex items-center gap-3 mb-6">
+                <span
+                  className="font-serif text-3xl leading-none opacity-40"
+                  style={{ color: "var(--blush)" }}
+                  aria-hidden="true"
+                >
+                  {String(idx + 1).padStart(2, "0")}
+                </span>
+                <span
+                  className="h-px flex-grow"
+                  style={{ background: "var(--border)" }}
+                  aria-hidden="true"
+                />
               </div>
 
               <h3
-                className="font-serif text-cream text-xl mb-4 leading-tight"
+                className="font-serif text-cream text-xl mb-3 leading-tight"
                 style={{ fontWeight: 400 }}
               >
                 {svc.name}
               </h3>
 
-              <p
-                className="font-sans text-sm text-muted-foreground leading-relaxed mb-8 flex-grow"
-              >
+              <p className="font-sans text-sm text-muted-foreground leading-relaxed mb-8 flex-grow">
                 {svc.description}
               </p>
 
-              <div className="flex items-center justify-between mt-auto">
+              <div className="flex items-center justify-between mt-auto pt-5 border-t border-border/60">
                 <span
                   className="font-serif text-xl"
                   style={{ color: "var(--blush)" }}

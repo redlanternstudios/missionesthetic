@@ -2,7 +2,7 @@ export default function BookingCta() {
   return (
     <section
       id="contact"
-      className="relative py-28 md:py-40 px-6 md:px-10 overflow-hidden"
+      className="relative py-24 md:py-40 px-6 md:px-10 overflow-hidden bg-card border-y border-border"
       aria-labelledby="cta-heading"
     >
       {/* Background card */}
@@ -41,7 +41,7 @@ export default function BookingCta() {
         />
         <p className="font-sans text-muted-foreground leading-relaxed mb-12 text-sm md:text-base">
           Private, one-on-one waxing care in Mission Valley. Book your session
-          directly through the scheduling link below — select your service, pick
+          directly through the scheduling link below. Select your service, pick
           your time, and Alexandra will take care of the rest.
         </p>
 
