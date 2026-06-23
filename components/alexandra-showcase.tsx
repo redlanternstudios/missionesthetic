@@ -52,17 +52,29 @@ export default function AlexandraShowcase() {
             style={{ height: "1px", background: "var(--blush)", opacity: 0.5 }}
           />
 
-          <p
-            className="font-sans text-muted-foreground leading-relaxed mb-10"
-            style={{ fontSize: "0.9375rem" }}
-          >
-            Alexandra offers private, detail-focused waxing services in a
-            clean and comfortable setting. Her work is centered around smooth
-            results, client comfort, and a calm one-on-one experience. Whether
-            it is brows, face, underarms, bikini, Brazilian, or full-body
-            waxing, Alexandra&apos;s approach is thoughtful, professional, and
-            confidence-driven.
-          </p>
+          <div className="mb-10 space-y-5 max-w-2xl">
+            <p
+              className="font-sans text-muted-foreground leading-relaxed"
+              style={{ fontSize: "0.9375rem" }}
+            >
+              If you know Alexandra, you already know the feeling &mdash; you walk
+              in a little nervous and leave glowing, lighter, and laughing. She
+              has a gift for making the most personal appointments feel easy, like
+              catching up with the friend who somehow always makes you feel like
+              the best version of yourself.
+            </p>
+            <p
+              className="font-sans text-muted-foreground leading-relaxed"
+              style={{ fontSize: "0.9375rem" }}
+            >
+              Behind the warmth is a true perfectionist. Every wax is precise,
+              gentle, and done with care &mdash; brows, face, underarms, bikini,
+              Brazilian, or full body. Her private studio is your space to exhale:
+              calm, judgment-free, and entirely about you. Come for the smooth
+              results, stay for the energy that keeps her clients coming back for
+              years.
+            </p>
+          </div>
 
           {/* Specialties */}
           <div className="mb-10">
