@@ -93,7 +93,7 @@ export default function Hero() {
           className="font-serif italic text-muted-foreground text-balance mb-3"
           style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.5rem)", fontWeight: 300 }}
         >
-          Private waxing and esthetics in Mission Valley
+          Private waxing and esthetics in Rancho Paquito
         </p>
 
         <p
@@ -106,9 +106,7 @@ export default function Hero() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 items-center">
           <a
-            href="https://missionesthetics.glossgenius.com/services"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://missionesthetics.glossgenius.com/book"
             className="font-sans text-xs tracking-[0.2em] uppercase px-10 py-4 bg-primary text-primary-foreground hover:bg-blush transition-colors duration-300 min-w-[160px] text-center"
           >
             Book Now
