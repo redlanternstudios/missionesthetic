@@ -40,15 +40,13 @@ export default function BookingCta() {
           style={{ height: "1px", background: "var(--blush)", opacity: 0.5 }}
         />
         <p className="font-sans text-muted-foreground leading-relaxed mb-12 text-sm md:text-base">
-          Private, one-on-one waxing care in Mission Valley. Book your session
+          Private, one-on-one waxing care in Rancho Paquito. Book your session
           directly through the scheduling link below. Select your service, pick
           your time, and Alexandra will take care of the rest.
         </p>
 
         <a
-          href="https://missionesthetics.glossgenius.com/services"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://missionesthetics.glossgenius.com/book"
           className="font-sans text-sm tracking-[0.2em] uppercase px-14 py-5 bg-primary text-primary-foreground hover:bg-blush transition-colors duration-300"
         >
           Book Now
