@@ -11,7 +11,7 @@ export default function Footer() {
             Mission Esthetics
           </p>
           <p className="font-sans text-xs text-muted-foreground">
-            Private waxing and esthetics in Mission Valley
+            Private waxing and esthetics in Rancho Paquito
           </p>
         </div>
 
@@ -24,8 +24,8 @@ export default function Footer() {
               { label: "Menu", href: "#menu" },
               {
                 label: "Book",
-                href: "https://missionesthetics.glossgenius.com/services",
-                external: true,
+                href: "https://missionesthetics.glossgenius.com/book",
+                external: false,
               },
             ].map((link) => (
               <li key={link.label}>
