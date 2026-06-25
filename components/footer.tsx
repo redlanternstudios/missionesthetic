@@ -11,7 +11,7 @@ export default function Footer() {
             Mission Esthetics
           </p>
           <p className="font-sans text-xs text-muted-foreground">
-            Private waxing and esthetics in Mission Valley
+            Private waxing and esthetics in Rancho Penasquitos
           </p>
         </div>
 

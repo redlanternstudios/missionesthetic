@@ -17,12 +17,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mission Esthetics — Private Waxing in Mission Valley",
+  title: "Mission Esthetics — Private Waxing in Rancho Penasquitos",
   description:
-    "Private, detail-focused waxing services by Alexandra in Mission Valley. Smooth results, client comfort, and a calm one-on-one experience.",
+    "Private, detail-focused waxing services by Alexandra in Rancho Penasquitos. Smooth results, client comfort, and a calm one-on-one experience.",
   keywords: [
     "waxing",
-    "Mission Valley",
+    "Rancho Penasquitos",
     "Brazilian wax",
     "esthetics",
     "body waxing",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Mission Esthetics",
-    description: "Private waxing and esthetics in Mission Valley.",
+    description: "Private waxing and esthetics in Rancho Penasquitos.",
     type: "website",
   },
 };
