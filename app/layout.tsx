@@ -17,12 +17,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mission Esthetics — Private Waxing in Rancho Penasquitos",
+  title: "Mission Esthetics — Private Waxing in Rancho Peñasquitos",
   description:
-    "Private, detail-focused waxing services by Alexandra in Rancho Penasquitos. Smooth results, client comfort, and a calm one-on-one experience.",
+    "Private, detail-focused waxing services by Alexandra in Rancho Peñasquitos. Smooth results, client comfort, and a calm one-on-one experience.",
   keywords: [
     "waxing",
-    "Rancho Penasquitos",
+    "Rancho Peñasquitos",
     "Brazilian wax",
     "esthetics",
     "body waxing",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Mission Esthetics",
-    description: "Private waxing and esthetics in Rancho Penasquitos.",
+    description: "Private waxing and esthetics in Rancho Peñasquitos.",
     type: "website",
   },
 };
