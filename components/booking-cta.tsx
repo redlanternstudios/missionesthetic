@@ -46,9 +46,7 @@ export default function BookingCta() {
         </p>
 
         <a
-          href="https://missionesthetics.glossgenius.com/services"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://missionesthetics.glossgenius.com/book"
           className="font-sans text-sm tracking-[0.2em] uppercase px-14 py-5 bg-primary text-primary-foreground hover:bg-blush transition-colors duration-300"
         >
           Book Now

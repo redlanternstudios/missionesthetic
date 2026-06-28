@@ -66,9 +66,7 @@ export default function Nav() {
             </button>
           )}
           <a
-            href="https://missionesthetics.glossgenius.com/services"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://missionesthetics.glossgenius.com/book"
             className="font-sans text-xs tracking-[0.2em] uppercase bg-primary text-primary-foreground px-6 py-2.5 hover:bg-blush transition-colors duration-200"
           >
             Book
@@ -110,9 +108,7 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="https://missionesthetics.glossgenius.com/services"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://missionesthetics.glossgenius.com/book"
             className="font-sans text-sm tracking-[0.2em] uppercase bg-primary text-primary-foreground px-6 py-3 text-center hover:bg-blush transition-colors"
             onClick={() => setOpen(false)}
           >

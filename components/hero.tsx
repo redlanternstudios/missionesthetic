@@ -106,9 +106,7 @@ export default function Hero() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 items-center">
           <a
-            href="https://missionesthetics.glossgenius.com/services"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://missionesthetics.glossgenius.com/book"
             className="font-sans text-xs tracking-[0.2em] uppercase px-10 py-4 bg-primary text-primary-foreground hover:bg-blush transition-colors duration-300 min-w-[160px] text-center"
           >
             Book Now

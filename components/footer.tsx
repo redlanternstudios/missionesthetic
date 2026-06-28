@@ -24,8 +24,8 @@ export default function Footer() {
               { label: "Menu", href: "#menu" },
               {
                 label: "Book",
-                href: "https://missionesthetics.glossgenius.com/services",
-                external: true,
+                href: "https://missionesthetics.glossgenius.com/book",
+                external: false,
               },
             ].map((link) => (
               <li key={link.label}>
