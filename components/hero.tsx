@@ -93,7 +93,7 @@ export default function Hero() {
           className="font-serif italic text-muted-foreground text-balance mb-3"
           style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.5rem)", fontWeight: 300 }}
         >
-          Private waxing and esthetics in Rancho Paquito
+          Private waxing and esthetics in Rancho Peñasquitos
         </p>
 
         <p
