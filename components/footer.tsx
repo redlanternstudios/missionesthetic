@@ -1,18 +1,9 @@
-import Image from "next/image";
-
 export default function Footer() {
   return (
     <footer className="border-t border-border py-16 px-6 md:px-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
-        {/* Brand + Logo */}
-        <div className="flex flex-col items-start gap-4">
-          <Image
-            src="/images/mission-esthetics-logo.png"
-            alt="Mission Esthetics"
-            width={100}
-            height={120}
-            className="h-20 md:h-24 w-auto object-contain"
-          />
+        {/* Brand */}
+        <div>
           <p className="font-sans text-xs text-muted-foreground">
             Private waxing and esthetics in Rancho Peñasquitos
           </p>
