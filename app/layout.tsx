@@ -34,6 +34,17 @@ export const metadata: Metadata = {
     title: "Mission Esthetics",
     description: "Private waxing and esthetics in Rancho Peñasquitos.",
     type: "website",
+    url: "https://missionesthetics.com",
+    siteName: "Mission Esthetics",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mission Esthetics — Private Waxing in Rancho Peñasquitos",
+    description: "Private, detail-focused waxing services by Alexandra in Rancho Peñasquitos.",
+  },
+  metadataBase: new URL("https://missionesthetics.com"),
+  alternates: {
+    canonical: "https://missionesthetics.com",
   },
 };
 
