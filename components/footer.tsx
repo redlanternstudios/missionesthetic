@@ -4,12 +4,6 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
         {/* Brand */}
         <div>
-          <p
-            className="font-serif text-cream text-xl tracking-widest uppercase mb-2"
-            style={{ letterSpacing: "0.18em" }}
-          >
-            Mission Esthetics
-          </p>
           <p className="font-sans text-xs text-muted-foreground">
             Private waxing and esthetics in Rancho Peñasquitos
           </p>
