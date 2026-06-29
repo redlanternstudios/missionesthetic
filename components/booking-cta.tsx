@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function BookingCta() {
   return (
     <section
@@ -22,6 +24,15 @@ export default function BookingCta() {
       />
 
       <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center text-center">
+        {/* Logo mark */}
+        <Image
+          src="/images/mission-esthetics-logo.png"
+          alt="Mission Esthetics"
+          width={100}
+          height={120}
+          className="h-20 md:h-24 w-auto object-contain mb-8 opacity-75"
+        />
+
         <p
           className="font-sans text-xs tracking-[0.3em] uppercase mb-6"
           style={{ color: "var(--blush)" }}

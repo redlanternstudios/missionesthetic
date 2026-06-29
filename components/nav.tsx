@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
 
@@ -37,12 +38,15 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
         {/* Logo */}
-        <a
-          href="#"
-          className="font-serif text-foreground text-xl md:text-2xl tracking-widest uppercase"
-          style={{ letterSpacing: "0.18em" }}
-        >
-          Mission Esthetics
+        <a href="#" className="flex-shrink-0">
+          <Image
+            src="/images/mission-esthetics-logo.png"
+            alt="Mission Esthetics"
+            width={120}
+            height={140}
+            className="h-16 md:h-20 w-auto object-contain"
+            priority
+          />
         </a>
 
         {/* Desktop nav */}

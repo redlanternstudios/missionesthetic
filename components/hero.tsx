@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const FLOWER_VIDEO =
   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/now_do_the_video-F3DIuRN3CkUUOIV5gDNV15svsayBPS.mp4";
@@ -62,6 +63,18 @@ export default function Hero() {
 
       {/* ── Hero content ── */}
       <div className="relative flex flex-col items-center text-center px-6 md:px-10 max-w-4xl mx-auto" style={{ zIndex: 10 }}>
+        {/* Logo mark */}
+        <div className="mb-8 md:mb-12">
+          <Image
+            src="/images/mission-esthetics-logo.png"
+            alt="Mission Esthetics"
+            width={180}
+            height={210}
+            className="h-32 md:h-40 w-auto object-contain opacity-90"
+            priority
+          />
+        </div>
+
         {/* Eyebrow */}
         <p
           className="font-sans text-xs tracking-[0.35em] uppercase mb-6"

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const SPECIALTIES = [
   "Brazilian Waxing",
   "Bikini Waxing",
@@ -24,6 +26,15 @@ export default function AlexandraShowcase() {
       <div className="max-w-3xl mx-auto">
         {/* Text panel */}
         <div className="flex flex-col items-center text-center">
+          {/* Logo mark */}
+          <Image
+            src="/images/mission-esthetics-logo.png"
+            alt="Mission Esthetics"
+            width={120}
+            height={140}
+            className="h-24 md:h-28 w-auto object-contain mb-8 opacity-80"
+          />
+
           {/* Eyebrow */}
           <p
             className="font-sans text-xs tracking-[0.3em] uppercase mb-6"
